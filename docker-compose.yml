@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  express:
+    container_name: express
+    build:
+      context: ./backend/docker
+      dockerfile: node.dockerfile
+    volumes:
+      - ./backend:/var/www
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    working_dir: /var/www
+    tty: true
+
+  mysql:
+    container_name: mysql
+    build:
+      context: ./backend/docker
+      dockerfile: mysql.dockerfile
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ~/.mysql_data/data/mysql:/var/lib/mysql
+      - ./backend/docker/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+
+  angular:
+    container_name: angular
+    build:
+      context: ./frontend/docker
+      dockerfile: node.dockerfile
+    volumes:
+      - ./frontend:/var/www
+    expose:
+      - "4200"
+    ports:
+      - "4200:4200"
+    working_dir: /var/www
+    tty: true
+

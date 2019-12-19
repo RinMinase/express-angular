@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "npm run build && pm2 start server.js",
+    "stop": "pm2 stop all && pm2 delete all",
+    "serve": "ng serve",
+    "build": "ng build --prod"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~7.2.0",
+    "@angular/compiler": "~7.2.0",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/router": "~7.2.0",
+    "core-js": "^2.5.4",
+    "express": "^4.17.1",
+    "rxjs": "~6.3.3",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/cli": "~7.3.9",
+    "@angular/compiler-cli": "~7.2.0",
+    "@types/node": "~8.9.4",
+    "typescript": "~3.2.2"
+  }
+}
