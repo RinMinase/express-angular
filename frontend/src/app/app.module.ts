@@ -1,10 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
 
 const routes: Routes = [];
+
+@Component({
+  selector: 'app-root',
+  template: `<router-outlet></router-outlet>`,
+  styles: []
+})
+export class AppComponent {}
 
 @NgModule({
   declarations: [AppComponent],
