@@ -1,0 +1,19 @@
+# General Files
+*.log
+.env
+node_modules/
+
+# Frontend output
+frontend/dist
+frontend/tmp
+
+# IDEs and editors
+/.idea
+.project
+.settings/
+.vscode/*
+.history/*
+
+# System Files
+.DS_Store
+Thumbs.db
