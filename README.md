@@ -31,3 +31,17 @@
     docker exec -it angular bash
     npm start
     ```
+
+## Built with
+
+### Backend
+* <img width=20 height=20 src="https://expressjs.com/images/favicon.png"> [ExpressJS](https://expressjs.com/) - Web Framework
+* <img width=20 height=20 src="https://babeljs.io/img/favicon.png"> [Babel ES5](https://babeljs.io/) - Language Syntax
+* <img width=20 height=20 src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/mysql-workbench-icon.png"> [MySQL](https://www.mysql.com/) - Database
+* <img width=20 height=20 src="https://yarnpkg.com/favicon.ico"> [Yarn](https://yarnpkg.com/) - Package Manager
+
+### Frontend
+* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 8](https://angular.io/) - Web Framework
+* <img width=20 height=20 src="https://www.typescriptlang.org/assets/images/icons/favicon-32x32.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
+* <img width=20 height=20 src="https://webpack.js.org/bc3effb418df77da9e04825c48a58a49.ico"> [Webpack 4](https://webpack.js.org/) - Project bundler
+* <img width=20 height=20 src="https://yarnpkg.com/favicon.ico"> [Yarn](https://yarnpkg.com/) - Package Manager
