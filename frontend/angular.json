@@ -27,7 +27,8 @@
             "scripts": [],
             "es5BrowserSupport": true,
             "extractCss": true,
-            "extractLicenses": false
+            "extractLicenses": false,
+            "aot": true
           },
           "configurations": {
             "production": {
@@ -35,7 +36,6 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
-              "aot": true,
               "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [{
